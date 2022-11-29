@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --v-main-bg: hsl(233, 47%, 7%);
+    --d-card-bg: hsl(244, 38%, 16%);
+    --s-accent: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-p: hsla(0, 0%, 100%, 0.75);
+    --stat-h: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--v-main-bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gray {
+    color: var(--main-p);
+}
+
+.gray-headings {
+    color: var(--stat-h);
+}
+
+main {
+    display: flex;
+    height: 60%;
+    width: 70%;
+}
+
+#left-container {
+    background-color: var(--d-card-bg);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 2em 3.5em;
+    border-radius: 1em 0 0 1em;
+}
+
+#right-container {
+    width: 60%;
+    background: url("./images/image-header-desktop.jpg"), var(--s-accent);
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 0 1em 1em 0;
+    width: 50%;
+}
+
+#acc {
+    margin-top: 8%;
+    display: flex;
+}
+
+#accent {
+    color: var(--s-accent);
+}
+
+#gray {
+    margin-top: 0.3em;
+    color: var(--stat-h);
+}
+
+#acc div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+
+h1, h2, #accent, p {
+    font-family: 'Inter', sans-serif;
+}
+
+.gray-headings {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    margin-top: -1.2em;
+    letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 95vh;
+    }
+
+    #acc {
+        margin-top: -1em;
+    }
+
+    #left-container {
+        padding: 1em;
+    }
+}
+
